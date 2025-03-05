@@ -1,0 +1,28 @@
+{
+  "cotizaciones": [
+    {
+      "id": "1",
+      "cliente": "Empresa A",
+      "monto": 5000,
+      "fecha": "2024-02-15"
+    },
+    {
+      "id": "2",
+      "cliente": "Empresa B",
+      "monto": 3500,
+      "fecha": "2024-02-16"
+    },
+    {
+      "id": "3",
+      "cliente": "Empresa c",
+      "monto": 4000,
+      "fecha": "2024-02-17"
+    },
+    {
+      "id": "2cb7",
+      "cliente": "empesa F",
+      "monto": "1000",
+      "fecha": "2025-02-01"
+    }
+  ]
+}
