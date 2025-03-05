@@ -20,20 +20,16 @@ const ComprarCotizaciones = () => {
         );
     }
 
-    const handleBack = () => {
-        navigate("/cotizaciones");
-    };
-
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
             <h1 className="text-4xl font-bold mb-6 text-gray-800">Comprar Cotizaciones</h1>
             <div className="w-full max-w-md p-6 bg-white shadow-lg rounded-lg">
                 <p className="text-xl font-semibold mb-4 text-gray-600">Cotización seleccionada: {cotizacion.cliente}</p>
                 <p className="text-gray-700 mb-4">Monto: ${cotizacion.monto}</p>
-                <Pago/>
+                <Pago />
                 <button 
-                    onClick={handleBack} 
-                    className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-md"
+                    onClick={() => navigate("/cotizaciones")} 
+                    className="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-md mt-4"
                 >
                     Volver
                 </button>

@@ -30,20 +30,20 @@ const Register = () => {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-6">
       <h1 className="text-4xl font-bold mb-6">Crear Cuenta</h1>
       <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-md">
-        <input
-          type="email"
-          placeholder="Correo electrónico"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="w-full p-3 border border-gray-300 rounded-md"
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-3 border border-gray-300 rounded-md"
-        />
+      <input
+  type="email"
+  placeholder="Correo electrónico"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800 focus:ring-blue-500 focus:border-blue-500"
+/>
+<input
+  type="password"
+  placeholder="Contraseña"
+  value={password}
+  onChange={(e) => setPassword(e.target.value)}
+  className="w-full p-3 border border-gray-300 rounded-md bg-white text-gray-800 focus:ring-blue-500 focus:border-blue-500"
+/>
         {error && <p className="text-red-500">{error}</p>}
         <button
           type="submit"
